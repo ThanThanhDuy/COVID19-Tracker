@@ -1,0 +1,9 @@
+@mixin fcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin setWH($width, $height) {
+  width: $width;
+  height: $height;
+}

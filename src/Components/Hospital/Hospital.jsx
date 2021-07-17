@@ -1,12 +1,10 @@
 import React from "react";
 // import PropTypes from "prop-types";
-import OverViewLeft from "./OverViewLeft/OverViewLeft";
-import OverViewRight from "./OverViewRight/OverViewRight";
 
-function OverView(props) {
+function Hospital(props) {
   return (
     <div
-      className="overView"
+      className="hospital"
       style={{
         backgroundColor: "#fff",
         width: "100%",
@@ -16,13 +14,11 @@ function OverView(props) {
         transition: "all 0.3s linear",
       }}
     >
-      <OverViewLeft />
-      <OverViewRight />
-      overView
+      hospital
     </div>
   );
 }
 
-// OverView.propTypes = {};
+// Hospital.propTypes = {};
 
-export default OverView;
+export default Hospital;

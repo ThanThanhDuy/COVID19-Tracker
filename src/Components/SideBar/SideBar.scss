@@ -1,0 +1,44 @@
+@import "../../mixins.scss";
+.sideBar {
+  @include setWH(15rem, 100vh);
+  background-color: #190f52;
+  transition: width 0.3s linear, height 0.3s linear;
+  @media screen and (max-width: 1024px) {
+    @include setWH(8rem, 100%);
+  }
+  &__icon {
+    @include fcenter();
+    padding-top: 2.5rem;
+    margin-bottom: 10rem;
+    transition: padding 0.3s linear;
+    @media screen and (max-width: 1024px) {
+      padding-top: 3.5rem;
+    }
+    a {
+      display: inline-block;
+      svg {
+        width: 5.6rem;
+        height: 5.6rem;
+        fill: #7d65d8;
+        transition: width 0.3s linear, height 0.3s linear;
+        @media screen and (max-width: 1024px) {
+          @include setWH(4.6rem, 4.6rem);
+        }
+      }
+    }
+  }
+  &__nav {
+    @include fcenter();
+    width: 100%;
+    .nav__list {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 5rem;
+      color: #fff;
+      width: 100%;
+      @media screen and (max-width: 1024px) {
+        gap: 4rem;
+      }
+    }
+  }
+}

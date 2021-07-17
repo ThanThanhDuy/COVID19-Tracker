@@ -1,0 +1,61 @@
+@import "../../../../mixins.scss";
+.nav__item {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem 0;
+  border-radius: 1.5rem 0 0 1.5rem;
+  position: relative;
+  i {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    i {
+      @include fcenter();
+      margin-bottom: 0;
+    }
+    span {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
+  }
+}
+.active {
+  background-color: #fff;
+  color: #000;
+  border-left: 5px solid #9987dd;
+  padding-right: 5px;
+  @media screen and (max-width: 1024px) {
+    @include fcenter();
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    @include setWH(3rem, 2rem);
+    border-radius: 100%;
+    background-color: #190f52;
+    top: -2rem;
+    right: 0rem;
+    box-shadow: 16px 11px 0 0 #fff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    @include setWH(4rem, 3rem);
+    border-radius: 100%;
+    background-color: #190f52;
+    bottom: -3rem;
+    right: 0rem;
+    box-shadow: 20px -18px 0 0 #fff;
+  }
+}
