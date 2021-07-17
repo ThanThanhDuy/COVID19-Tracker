@@ -1,8 +1,7 @@
 import "./App.css";
 import "./reset.css";
-import Dashboard from "./Pages/Dashboard";
 function App() {
-  return <Dashboard />;
+  return <></>;
 }
 
 export default App;
