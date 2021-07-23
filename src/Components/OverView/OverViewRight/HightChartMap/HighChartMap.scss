@@ -1,0 +1,35 @@
+@import "../../../../colors.scss";
+
+.highcharts-container {
+  // width: 56rem !important;
+  svg {
+    width: 48rem !important;
+    font-family: "Poppins", sans-serif !important;
+    .highcharts-background {
+      fill: $bgco2;
+    }
+    .highcharts-zoom-in {
+      .highcharts-button-box {
+        fill: #fff !important;
+        stroke: none !important;
+      }
+      text {
+        fill: #000 !important;
+        font-weight: 600 !important;
+      }
+    }
+    .highcharts-zoom-out {
+      .highcharts-button-box {
+        fill: #fff !important;
+        stroke: none !important;
+      }
+      text {
+        fill: #000 !important;
+        font-weight: 600 !important;
+      }
+    }
+    .highcharts-credits {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../../../../colors.scss";
+.headerOver {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+  .headerOver__box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    .headerOver__Title {
+      span {
+        font-size: 3rem;
+        font-weight: 900;
+        color: $fillCo2;
+      }
+    }
+  }
+
+  &__select {
+    form {
+      .selectBox {
+        height: fit-content;
+        padding: 1rem 2.5rem 1rem 2rem;
+        border-radius: 1rem;
+        font-weight: 600;
+        border: none;
+        box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 20px 12px;
+        background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='$fillCo2' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+          no-repeat #fff;
+        color: #000;
+        background-position: calc(100% - 1.75rem) center !important;
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 20rem;
+        width: 100%;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 1.5rem;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 1.5rem;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      }
+    }
+  }
+}

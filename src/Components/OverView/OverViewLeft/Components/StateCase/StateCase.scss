@@ -1,0 +1,10 @@
+.stateCase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &__box {
+    max-width: 90%;
+    width: 100%;
+  }
+}

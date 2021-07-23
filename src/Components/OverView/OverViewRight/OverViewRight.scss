@@ -1,0 +1,87 @@
+@import "../../../colors.scss";
+.Overview__right {
+  background-color: transparent;
+  padding: 4rem;
+  .right__content {
+    padding: 0 4rem;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    .highcharts-container {
+      padding: 0 4rem;
+      height: 100%;
+    }
+    .right__content__box {
+      background: linear-gradient(to right, rgba(37, 57, 62, 0.5), #4b3c38)
+        no-repeat;
+      box-shadow: rgba(20, 20, 20, 0.2) 0px 0px 20px 20px;
+      border-radius: 2.5rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 75%;
+      width: 100%;
+      .right__img {
+        img {
+          height: 20rem;
+        }
+        padding-right: 3rem;
+      }
+      .right__content--text {
+        padding-left: 3rem;
+        .p1 {
+          margin-bottom: 1rem;
+          font-size: 3.5rem;
+          font-weight: 800;
+          color: rgba(255, 255, 255, 0.9);
+
+          .p1--detail {
+            margin-right: 1.5rem;
+            color: transparent;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .p2 {
+          font-size: 3.5rem;
+          font-weight: 800;
+          color: rgba(255, 255, 255, 0.9);
+          .p2--detail {
+            margin-left: 1.5rem;
+            color: rgba(0, 0, 0, 0.6);
+            text-shadow: 18px 18px 24px rgba(65, 62, 62, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .map__right {
+    height: 70%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    width: 60rem;
+    @media screen and (max-width: 1550px) {
+      width: 50rem;
+    }
+    .react-reveal {
+      div {
+        .highcharts-container {
+          @media screen and (min-width: 1550px) {
+            max-width: 60rem !important;
+          }
+
+          // @media screen and (max-width: 1549px) {
+          //   max-width: 50rem !important;
+          // }
+          .highcharts-root {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

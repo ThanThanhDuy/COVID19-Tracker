@@ -1,5 +1,8 @@
 .dashboard {
   width: 100%;
   display: flex;
-  background-color: #190f52;
+  background-color: inherit;
+  // @media screen and (max-width: 425px) {
+  //   display: block;
+  // }
 }

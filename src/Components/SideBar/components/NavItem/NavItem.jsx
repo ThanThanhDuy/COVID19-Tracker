@@ -10,14 +10,14 @@ function NavItem(props) {
         <li className="nav__item active">
           <Fade top delay={time}>
             <i className={icon}></i>
-            <span>{text}</span>
+            {/* <span>{text}</span> */}
           </Fade>
         </li>
       ) : (
         <li className="nav__item">
           <Fade top delay={time}>
             <i className={icon}></i>
-            <span>{text}</span>
+            {/* <span>{text}</span> */}
           </Fade>
         </li>
       )}

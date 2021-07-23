@@ -1,0 +1,65 @@
+@import "../../mixins.scss";
+.menu {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: -23rem;
+  height: 6rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  background-color: #190f52;
+  transition: bottom 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  .menu__icon {
+    a {
+      display: inline-block;
+      height: 3.5rem;
+      svg {
+        @include setWH(3.5rem, 3.5rem);
+        fill: #7d65d8;
+      }
+    }
+  }
+  .menu__app {
+    @include setWH(2.5rem, 2.5rem);
+    .menu__icon {
+      i {
+        @include setWH(2.5rem, 2.5rem);
+
+        color: #fff;
+        font-size: 2.5rem;
+      }
+    }
+
+    .submenu {
+      position: absolute;
+      // top: -13.7rem;
+      top: 9rem;
+      left: 0;
+      background-color: #fff;
+      box-shadow: rgba(149, 157, 165, 0.3) 0px -15px 24px 0px;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 2.5rem 2.5rem 0 0;
+      transition: top 0.3s linear;
+
+      .submenu__close {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+        i {
+          color: #000;
+          font-size: 2.5rem;
+        }
+      }
+      .navList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+  }
+}
