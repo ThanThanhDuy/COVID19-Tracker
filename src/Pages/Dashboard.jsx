@@ -42,7 +42,6 @@ function Dashboard(props) {
       <SideBar changeVis={changeVis} navLink={navLink} />
       <Menu navLink={navLink} changeVis={changeVis} />
       {vis === 0 && <OverView />}
-      {vis === 1 && <Hospital />}
     </div>
   );
 }

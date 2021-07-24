@@ -10,7 +10,9 @@ function HeaderOver(props) {
       <div className="headerOver__box">
         <Fade top delay={200}>
           <div className="headerOver__Title">
-            <span>Covid19 Overview</span>
+            <span>
+              <span className="title__text--overView">Covid19</span> Overview
+            </span>
           </div>
         </Fade>
       </div>

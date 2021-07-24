@@ -29,6 +29,12 @@
         @media screen and(max-width:650px) {
           width: 30%;
         }
+        @media screen and(max-width:649px) {
+          width: 25%;
+        }
+        @media screen and(max-width:425px) {
+          width: 20%;
+        }
         &::before {
           content: "";
           max-width: 1rem;
@@ -67,6 +73,12 @@
         @media screen and(max-width:650px) {
           width: 30%;
         }
+        @media screen and(max-width:649px) {
+          width: 25%;
+        }
+        @media screen and(max-width:425px) {
+          width: 20%;
+        }
         &::before {
           content: "";
           max-width: 1rem;
@@ -98,7 +110,10 @@
           width: 25%;
         }
         @media screen and(max-width:650px) {
-          width: 30%;
+          width: 40%;
+        }
+        @media screen and(max-width:425px) {
+          width: 50%;
         }
         &--show {
           position: absolute;
@@ -130,7 +145,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
 
       .progressBar__box {
         // max-width: 63rem;
@@ -139,6 +154,9 @@
           width: calc(75% + 4rem);
         }
         @media screen and(max-width:650px) {
+          width: calc(90% + 4rem);
+        }
+        @media screen and(max-width:649px) {
           width: calc(90% + 4rem);
         }
         display: flex;

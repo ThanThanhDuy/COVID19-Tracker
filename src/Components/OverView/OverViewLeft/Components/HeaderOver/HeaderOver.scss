@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 7rem;
+  height: fit-content;
+  @media screen and (max-width: 649px) {
+    margin-bottom: 3rem;
+  }
   .headerOver__box {
     width: 70%;
     display: flex;
@@ -12,11 +16,17 @@
     @media screen and (max-width: 1439px) {
       width: 80%;
     }
+
     .headerOver__Title {
       span {
         font-size: 3rem;
         font-weight: 900;
         color: $fillCo2;
+        .title__text--overView {
+          @media screen and (max-width: 649px) {
+            display: none;
+          }
+        }
       }
     }
   }

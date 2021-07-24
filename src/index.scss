@@ -8,3 +8,8 @@ html {
   height: 100%;
   user-select: none;
 }
+body {
+  @media screen and (max-width: 649px) {
+    padding-bottom: 6rem;
+  }
+}

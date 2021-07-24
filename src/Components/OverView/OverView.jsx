@@ -111,7 +111,7 @@ function OverView(props) {
             deaths: [],
           };
           if (res.length > 0) {
-            const arrTmp = res.slice(res.length - 32);
+            const arrTmp = res.slice(res.length - 12);
             // arrTmp.forEach((caseFollowDate) => {
             //   dataTmp.date.push(moment(caseFollowDate.Date).format("MMM DD"));
             //   dataTmp.active.push(caseFollowDate.Active);

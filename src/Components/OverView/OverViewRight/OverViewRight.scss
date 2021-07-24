@@ -31,6 +31,9 @@
       display: flex;
       justify-content: center;
     }
+    @media screen and (max-width: 649px) {
+      padding: 0 2rem;
+    }
 
     .highcharts-container {
       padding: 0 4rem;
@@ -93,6 +96,9 @@
           @media screen and (max-width: 900px) {
             font-size: 3.5rem;
           }
+          @media screen and (max-width: 320px) {
+            font-size: 2.5rem;
+          }
         }
         .p12,
         .p22 {
@@ -115,6 +121,9 @@
           }
           @media screen and (max-width: 900px) {
             font-size: 3.5rem;
+          }
+          @media screen and (max-width: 320px) {
+            font-size: 2.5rem;
           }
           .p22--detail {
             margin-left: 1.5rem;
@@ -208,6 +217,10 @@
     }
     @media screen and (max-width: 1439px) {
       padding: 4rem;
+      width: 100%;
+    }
+    @media screen and (max-width: 625px) {
+      padding: 1rem 2rem;
       width: 100%;
     }
 
