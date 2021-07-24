@@ -39,39 +39,6 @@ const initOptions = {
       joinBy: ["hc-key", "key"],
     },
   ],
-  responsive: {
-    rules: [
-      {
-        condition: {
-          maxWidth: 500,
-          minWidth: 300,
-        },
-        chartOptions: {
-          legend: {
-            align: "center",
-            verticalAlign: "bottom",
-            layout: "horizontal",
-          },
-          yAxis: {
-            labels: {
-              align: "left",
-              x: 0,
-              y: -5,
-            },
-            title: {
-              text: null,
-            },
-          },
-          subtitle: {
-            text: null,
-          },
-          credits: {
-            enabled: false,
-          },
-        },
-      },
-    ],
-  },
 };
 
 function HighChartMap(props) {

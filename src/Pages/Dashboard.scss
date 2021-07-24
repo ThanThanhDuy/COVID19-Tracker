@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   background-color: inherit;
-  // @media screen and (max-width: 425px) {
-  //   display: block;
-  // }
+  @media screen and (max-width: 649px) {
+    display: block;
+  }
 }

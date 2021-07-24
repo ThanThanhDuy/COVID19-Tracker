@@ -3,4 +3,15 @@
   width: 100%;
   padding: 4rem;
   background-color: $bgco2;
+  display: grid;
+  grid-template-rows: 1fr 2fr 5fr;
+  @media screen and (max-width: 1920px) {
+    grid-template-rows: 1fr 2fr 4fr;
+  }
+  @media screen and (max-width: 1439px) {
+    padding: 4rem 4rem 1rem;
+  }
+  @media screen and (max-width: 650px) {
+    grid-template-rows: 1fr 2fr 3fr;
+  }
 }

@@ -7,4 +7,9 @@
   transition: all 0.3s linear;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  @media screen and (max-width: 1439px) {
+    // height: 100%;
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+  }
 }

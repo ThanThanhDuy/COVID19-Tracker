@@ -2,19 +2,132 @@
 .Overview__right {
   background-color: transparent;
   padding: 4rem;
+  @media screen and (max-width: 1650px) {
+    padding: 4rem 2rem 4rem 4rem;
+  }
+  @media screen and (max-width: 1440px) {
+    padding: 4rem 0 0 0;
+  }
+  @media screen and (max-width: 1439px) {
+    padding: 0;
+  }
+
   .right__content {
     padding: 0 4rem;
     height: 30%;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1350px) {
+      padding: 0 2rem;
+    }
+    @media screen and (max-width: 1439px) {
+      height: fit-content;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 6rem;
+      gap: 5rem;
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+
     .highcharts-container {
       padding: 0 4rem;
       height: 100%;
     }
+    .right__content__box2 {
+      width: 0;
+      height: 0;
+      background: linear-gradient(to right, rgba(37, 57, 62, 0.5), #4b3c38)
+        no-repeat;
+      box-shadow: rgba(20, 20, 20, 0.2) 0px 0px 20px 12px;
+      border-radius: 2.5rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      @media screen and (max-width: 1439px) {
+        height: fit-content;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
+      @media screen and (max-width: 900px) {
+        justify-content: space-around;
+      }
+      .right__img2 {
+        img {
+          height: 20rem;
+          width: 22.1rem;
+          @media screen and (max-width: 850px) {
+            height: 15rem;
+          }
+        }
+        padding-right: 2rem;
+      }
+      .right__content--text2 {
+        padding-left: 3rem;
+        @media screen and (max-width: 1440px) {
+          padding-left: 1.5rem;
+        }
+
+        .p12--detail {
+          margin-bottom: 1rem;
+          color: transparent;
+          font-size: 3.5rem;
+          font-weight: 800;
+          text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+          @media screen and (max-width: 1024px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 3.5rem;
+          }
+        }
+        .p12,
+        .p22 {
+          margin-bottom: 1rem;
+
+          font-size: 3.5rem;
+          font-weight: 800;
+          color: rgba(255, 255, 255, 0.9);
+          @media screen and (max-width: 1440px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 1439px) {
+            font-size: 3.5rem;
+          }
+          @media screen and (max-width: 1024px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 3.5rem;
+          }
+          .p22--detail {
+            margin-left: 1.5rem;
+            color: rgba(0, 0, 0, 0.6);
+            text-shadow: 18px 18px 24px rgba(65, 62, 62, 0.5);
+          }
+        }
+      }
+    }
     .right__content__box {
       background: linear-gradient(to right, rgba(37, 57, 62, 0.5), #4b3c38)
         no-repeat;
-      box-shadow: rgba(20, 20, 20, 0.2) 0px 0px 20px 20px;
+      box-shadow: rgba(20, 20, 20, 0.2) 0px 0px 20px 12px;
       border-radius: 2.5rem;
       padding: 1rem;
       display: flex;
@@ -23,30 +136,53 @@
       position: relative;
       height: 75%;
       width: 100%;
+      @media screen and (max-width: 1439px) {
+        height: fit-content;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
       .right__img {
         img {
           height: 20rem;
+          @media screen and (max-width: 850px) {
+            height: 15rem;
+          }
         }
-        padding-right: 3rem;
+        padding-right: 2rem;
       }
       .right__content--text {
         padding-left: 3rem;
-        .p1 {
+        @media screen and (max-width: 1440px) {
+          padding-left: 1.5rem;
+        }
+        .p1,
+        .p2 {
           margin-bottom: 1rem;
           font-size: 3.5rem;
           font-weight: 800;
           color: rgba(255, 255, 255, 0.9);
-
+          @media screen and (max-width: 1440px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 1439px) {
+            font-size: 3.5rem;
+          }
+          @media screen and (max-width: 1150px) {
+            font-size: 3.5rem;
+          }
+          @media screen and (max-width: 1024px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 2.5rem;
+          }
           .p1--detail {
             margin-right: 1.5rem;
             color: transparent;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
           }
-        }
-        .p2 {
-          font-size: 3.5rem;
-          font-weight: 800;
-          color: rgba(255, 255, 255, 0.9);
           .p2--detail {
             margin-left: 1.5rem;
             color: rgba(0, 0, 0, 0.6);
@@ -67,16 +203,27 @@
     @media screen and (max-width: 1550px) {
       width: 50rem;
     }
+    @media screen and (max-width: 1440px) {
+      padding: 0 0 0 4rem;
+    }
+    @media screen and (max-width: 1439px) {
+      padding: 4rem;
+      width: 100%;
+    }
+
     .react-reveal {
       div {
         .highcharts-container {
-          @media screen and (min-width: 1550px) {
-            max-width: 60rem !important;
+          max-width: 60rem;
+          width: 100% !important;
+
+          @media screen and (max-width: 1549px) {
+            max-width: 50rem;
+          }
+          @media screen and (max-width: 1439px) {
+            max-width: 70rem;
           }
 
-          // @media screen and (max-width: 1549px) {
-          //   max-width: 50rem !important;
-          // }
           .highcharts-root {
             width: 100% !important;
           }

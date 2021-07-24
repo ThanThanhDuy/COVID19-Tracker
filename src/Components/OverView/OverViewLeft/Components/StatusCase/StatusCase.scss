@@ -23,6 +23,12 @@
         border-left: 2px dashed $lineCo;
         margin-right: 2rem;
         position: relative;
+        @media screen and(max-width:1024px) {
+          width: 25%;
+        }
+        @media screen and(max-width:650px) {
+          width: 30%;
+        }
         &::before {
           content: "";
           max-width: 1rem;
@@ -54,8 +60,13 @@
         border-top-right-radius: 2.5rem;
         border-top: 2px dashed $lineCo;
         border-right: 2px dashed $lineCo;
-
         position: relative;
+        @media screen and(max-width:1024px) {
+          width: 25%;
+        }
+        @media screen and(max-width:650px) {
+          width: 30%;
+        }
         &::before {
           content: "";
           max-width: 1rem;
@@ -83,6 +94,12 @@
         position: relative;
         // max-width: 18.5rem;
         width: 20%;
+        @media screen and(max-width:1024px) {
+          width: 25%;
+        }
+        @media screen and(max-width:650px) {
+          width: 30%;
+        }
         &--show {
           position: absolute;
           width: 100%;
@@ -113,10 +130,17 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-bottom: 10rem;
+      margin-bottom: 4rem;
+
       .progressBar__box {
         // max-width: 63rem;
         width: calc(60% + 4rem);
+        @media screen and(max-width:1024px) {
+          width: calc(75% + 4rem);
+        }
+        @media screen and(max-width:650px) {
+          width: calc(90% + 4rem);
+        }
         display: flex;
         justify-content: center;
         height: 0.7rem;
